@@ -1,0 +1,58 @@
+/* -- ALL -- */
+/* -- NAV -- */
+/* -- MAIN HEADER -- */
+section.nav-menu {
+  border: 2px solid #606060;
+  background: whitesmoke;
+  position: absolute;
+  right: 0;
+  top: 101%;
+  width: 300px;
+  max-width: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 99;
+  border-radius: 0 0 0 1em;
+  padding: 0 .5em;
+}
+
+section.nav-menu ol {
+  list-style: none;
+}
+
+section.nav-menu ol li:not(.line) {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 1em;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 4vw, 1rem);
+}
+
+section.nav-menu ol li:not(.line):hover {
+  background: #768fbd;
+  color: white;
+}
+
+section.nav-menu ol li:not(.line) svg {
+  width: 25px;
+  margin-right: 1em;
+  height: 25px;
+}
+
+section.nav-menu ol li.line {
+  height: 2px;
+  background: #606060;
+  width: 50%;
+  margin: .5em auto;
+  border-radius: 1em;
+}

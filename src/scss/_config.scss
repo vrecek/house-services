@@ -1,0 +1,39 @@
+/* -- ALL -- */
+$light-back: url('../images/background.png');
+$dark-back: #303030;
+
+$light-clr1: #303030;
+$dark-clr1: whitesmoke;
+
+/* -- NAV -- */
+$light-nav: rgb(250, 250, 250);
+$dark-nav: #252525;
+
+/* -- MAIN HEADER -- */
+$h-light-back: url('../images/header-light.png');
+$h-dark-back: url('../images/header-dark.png');
+
+@mixin flex-c-c {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+@mixin flex-sa-c {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+@mixin flex-sb-c {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+@mixin abs-50-50 {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}

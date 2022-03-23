@@ -1,0 +1,60 @@
+/* -- ALL -- */
+/* -- NAV -- */
+/* -- MAIN HEADER -- */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  font-family: 'Sora', sans-serif;
+  background-size: 100%;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+body.light {
+  background: url("../images/background.png");
+  color: #303030;
+}
+
+body.light div.menu span {
+  background: #303030;
+}
+
+body.dark {
+  background: #303030;
+  color: whitesmoke;
+}
+
+body.dark nav.layout-nav {
+  background: #252525;
+}
+
+body.dark div.menu span {
+  background: whitesmoke;
+}
+
+body.dark section.nav-menu {
+  background: #252525;
+}
+
+body.dark header.main-header {
+  background: url("../images/header-dark.png");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+body.dark header.main-header section.input-text input {
+  color: whitesmoke;
+  background: #252525;
+}
+
+body.dark header.main-header section.input-text span.ic-srch svg {
+  color: whitesmoke;
+}
