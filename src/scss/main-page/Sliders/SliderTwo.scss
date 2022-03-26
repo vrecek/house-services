@@ -1,0 +1,119 @@
+@import '../../config';
+
+.slider-two {
+   height: 100vh;
+   @include flex-sa-c;
+
+   figure {
+      width: 50%;
+      position: relative;
+      overflow: hidden;
+
+      section {
+         position: absolute;
+         left:50%;
+         bottom:5%;
+         transform: translateX(-50%);
+         display: flex;
+         z-index: 555;
+
+         div {
+            width: clamp(12px, 3vw, 15px);
+            height: clamp(12px, 3vw, 15px);
+            border-radius: 50%;
+            background: cornflowerblue;
+            border: 2px solid royalblue;
+            margin: 0 .5em;
+            cursor: pointer;
+            transition: .2s;
+            
+            &.active { background: orangered !important; pointer-events: none; }
+
+            &:hover {
+               background: rgb(75, 109, 173);
+            }
+         }
+      }
+
+      div {
+         display: flex;
+
+         img { width: 100%; }
+      }  
+   }
+
+   article {
+      width: 35%;
+      border-radius: .5em;
+      background: rgba(221, 224, 221, 0.4);
+      padding:1em;
+
+      h1 {
+         text-align: center;
+         font-size: clamp(1rem, 7vw, 2.5rem);
+         font-family: 'Hubballi', cursive;
+         color: royalblue;
+         text-shadow: 0 0 2px black;
+         margin-bottom: .5em;
+      }
+
+      p.desc {
+         font-weight: 400;
+         font-size: clamp(.75rem, 4vw, .9rem);
+         padding:1em 0 1.5em 0;
+         text-align: center;
+      }
+
+      button {
+         width: 30%;
+         min-width: 130px;
+         outline: 0;
+         border: 1px solid orangered;
+         border-radius: .2em;
+         background: orangered;
+         color: white;
+         margin: 0 auto;
+         padding:.6em 0;
+         cursor: pointer;
+         transition: .3s;
+         position: relative;
+         display: block;
+
+         span {
+            position: absolute;
+            height: calc(100% + 6px);
+            background: orange;
+            width: 80%;
+            border-radius: .2em;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%) scaleX(0);
+            transition: .3s;
+            z-index: -1;
+            display: block;
+         }
+
+         &:hover {
+            span { transform: translate(-50%,-50%) scaleX(1); }
+            background: rgb(153, 48, 0);
+         }
+         
+         p { font-weight: 700; text-transform: uppercase; text-shadow: 0 0 2px black; }
+      }
+   }
+}
+
+ @media (max-width: 768px){
+   .slider-two {
+      flex-direction: column;
+
+      article {
+         width: 90%;
+      }
+
+      figure {
+         width: 75%;
+         min-width: 250px;
+      }
+   }
+}

@@ -1,0 +1,98 @@
+@import '../../config';
+
+.offer-nav {
+   background: rgb(92, 122, 209);
+   padding: 0 .5em;
+
+   section.wrap { @include flex-sb-c; }
+   
+   h6 { margin-right: 2em; color: $dark-clr1; span { border-bottom: 1px solid $dark-clr1; } }
+
+   section {
+      display: flex;
+      align-items: center;
+
+      &.search {
+         position: relative;
+         padding: .3em 0;
+
+         input {
+            height: 90%;
+            width: clamp(180px, 23vw, 220px);
+            border: 1px solid orangered;
+            padding:.5em;
+            background: rgba(255, 68, 0, 0.6);
+            border-radius: .3em;
+            outline: 0;
+            color: $dark-clr1;
+            font-size: clamp(.9rem, 4vw, 1rem);
+         }
+
+         svg {
+            position: absolute;
+            right: 100%;
+            top:50%;
+            width: 20px;
+            height: 20px;
+            transform: translateY(-50%);
+            color: $dark-clr1;
+         }
+      }
+
+      div.wrap-two {
+         display: flex;
+      }
+
+      div.select-div {
+         display: flex;
+         align-items: center;
+         margin-right: .5em;
+         padding:.2em 0;
+
+         select {
+            border: 1px solid rgb(236, 100, 51);
+            background: rgb(248, 96, 41);
+            color: $dark-clr1;
+            padding:.5em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .2s;
+            outline: 0;
+            border-radius: .2em;
+
+            &:hover { background: orangered; }
+         }
+
+         svg {
+            width: clamp(10px, 2vw, 20px);
+            height: clamp(10px, 2vw, 20px);
+            filter: drop-shadow(0 0 1px black);
+            margin-right: .5em;
+            color: $dark-clr1;
+         }
+      }
+   }
+}
+
+@media (max-width: 768px){
+   .offer-nav {
+      section {
+         flex-direction: column;
+         align-items: flex-start;
+
+         &.user-city { flex-direction: row; justify-content: space-between; } 
+
+         &.search {
+            margin: 0 auto;
+            width: 85%; 
+
+            input { width: 100%; }
+         }
+
+         div.select-div {
+            select { width: clamp(100px, 30vw, 150px); font-size: clamp(.65rem, 3vw, .8rem); }
+            svg { width: 15px; height: 15px; }
+         }
+      }
+   }
+}

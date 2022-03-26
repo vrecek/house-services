@@ -9,18 +9,50 @@
   font-weight: 300;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 body {
   width: 100vw;
   min-height: 100vh;
   font-family: 'Sora', sans-serif;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: 100% 100% !important;
+  background-attachment: fixed !important;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+  background: #303030;
+}
+
+body::-webkit-scrollbar-thumb {
+  width: 100%;
+  border-radius: 1em;
+  background: orangered;
+}
+
+body::before {
+  position: fixed;
+  left: 0;
+  top: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 body.light {
-  background: url("../images/background.png");
+  background: url("../images/background-light.png");
   color: #303030;
+}
+
+body.light::before {
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  background: rgba(250, 250, 250, 0.75);
 }
 
 body.light div.menu span {
@@ -28,8 +60,14 @@ body.light div.menu span {
 }
 
 body.dark {
-  background: #303030;
+  background: url("../images/background-dark.png");
   color: whitesmoke;
+}
+
+body.dark::before {
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 body.dark nav.layout-nav {
@@ -57,4 +95,52 @@ body.dark header.main-header section.input-text input {
 
 body.dark header.main-header section.input-text span.ic-srch svg {
   color: whitesmoke;
+}
+
+body.dark .slider-one section.images span:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+body.dark .slider-two article {
+  background: rgba(63, 63, 63, 0.362);
+}
+
+body.dark .choose-cont article h1 {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body.dark .choose-cont article section.inner {
+  background: rgba(27, 27, 27, 0.95);
+}
+
+body.dark .choose-cont article img {
+  -webkit-filter: grayscale(40%);
+          filter: grayscale(40%);
+}
+
+body.dark .subscribe-section, body.dark footer {
+  background: #254194;
+}
+
+body.dark .reasons h1 {
+  background: rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid whitesmoke;
+}
+
+body.dark .reasons article::after {
+  background: whitesmoke;
+}
+
+body.dark .reasons article div {
+  -webkit-box-shadow: 0 0 2px #b3b3b3, 0 0 4px #b3b3b3, 0 0 2px #b3b3b3 inset, 0 0 4px #b3b3b3 inset;
+          box-shadow: 0 0 2px #b3b3b3, 0 0 4px #b3b3b3, 0 0 2px #b3b3b3 inset, 0 0 4px #b3b3b3 inset;
+  background: linear-gradient(45deg, #1f1d1d 17%, #2f2f2f 30%, #242424 59%, #2f2d2d 79%);
+}
+
+body.dark .reasons article div:first-child::before, body.dark .reasons article div:last-child::before {
+  background: whitesmoke;
+}
+
+body.dark .offer-nav {
+  background: #3b4f8b;
 }

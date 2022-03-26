@@ -58,7 +58,7 @@ const Header = () => {
             <Button text='Lorems ipsum' />
             <Button text='Dolore sit' />
          </section>  
-
+         
       </header>
    )
 }

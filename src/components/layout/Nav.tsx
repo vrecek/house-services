@@ -21,7 +21,7 @@ const Nav = () => {
       setTheme(t)
    }
 
-   const showMenu = (e:React.FormEvent<EventTarget>) => {
+   const showMenu = (e:React.MouseEvent<EventTarget>) => {
       const ev = e.target as HTMLElement
       const children:Array<HTMLElement> = Array.from(ev.children as HTMLCollectionOf<HTMLElement>)
       const switchVal:boolean = !displayMenu

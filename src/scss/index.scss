@@ -10,16 +10,44 @@
    font-weight: 300;
 }
 
+#root {
+   overflow-x: hidden;
+}
+
 body {
    width: 100vw;
    min-height: 100vh;
    font-family: 'Sora', sans-serif;
-   background-size: 100%;
-   background-attachment: fixed;
+   background-size: 100% 100% !important;
+   background-attachment: fixed !important;
    overflow-x: hidden;
+   position: relative;
+
+   &::-webkit-scrollbar {
+      width: 4px;
+      background: #303030;
+   }
+   &::-webkit-scrollbar-thumb {
+      width: 100%;
+      border-radius: 1em;
+      background: orangered;
+   }
+   &::before {
+      position: fixed;
+      left:0;
+      top:0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+   }
 
    &.light {
       background: $light-back;
+      &::before {
+         backdrop-filter: blur(6px);
+         background: rgba(250, 250, 250, 0.75);  
+      }
       color: $light-clr1;
 
       div.menu span { background: $light-clr1; }    
@@ -27,6 +55,10 @@ body {
 
    &.dark {
       background: $dark-back;
+      &::before {
+         backdrop-filter: blur(8px);
+         background: rgba(0, 0, 0, 0.8);  
+      }
       color: $dark-clr1;
       
       nav.layout-nav { background: $dark-nav; }
@@ -39,6 +71,36 @@ body {
          background: $h-dark-back; background-size: cover; background-position: 50% 50%; 
          section.input-text { input { color: $dark-clr1; background: $dark-nav; } span.ic-srch { svg { color: $dark-clr1; } } }
       } 
+
+      .slider-one { section.images { span { &:hover { background: rgba(255, 255, 255, 0.15) } } } }
+      .slider-two { article { background: rgba(63, 63, 63, 0.362); } }
+
+      .choose-cont { article { 
+         h1 { background: rgba(0, 0, 0, 0.7); } 
+         section.inner { background: rgba(27, 27, 27, .95); }
+         img { filter: grayscale(40%); }
+      } 
+      }
+
+      .subscribe-section, footer { background: rgb(37, 65, 148); }
+
+      .reasons {
+         h1 { background: rgba(0, 0, 0, 0.15); border-bottom: 2px solid whitesmoke; }
+         article {
+            &::after { background: $dark-clr1; }
+            div { 
+               &:first-child, &:last-child { &::before { background: $dark-clr1; } }
+
+               box-shadow: 0 0 2px rgb(179, 179, 179), 0 0 4px rgb(179, 179, 179), 0 0 2px rgb(179, 179, 179) inset, 0 0 4px rgb(179, 179, 179) inset;
+
+               background: linear-gradient(45deg, rgba(31,29,29,1) 17%, rgba(47,47,47,1) 30%, rgba(36,36,36,1) 59%, rgba(47,45,45,1) 79%);
+            } 
+         }
+      }
+
+      .offer-nav {
+         background: rgb(59, 79, 139);
+      }
    }
 }
 

@@ -1,4 +1,4 @@
 export interface mainInputHandle {
-   e: React.FormEvent,
+   e: React.FocusEvent,
    type: 'blur' | 'focus'
 }
