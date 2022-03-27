@@ -15,6 +15,10 @@ nav.layout-nav {
   padding: 0 1em;
   position: relative;
   background: #fafafa;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999999;
 }
 
 nav.layout-nav section.layout-sect {

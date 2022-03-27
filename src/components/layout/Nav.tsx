@@ -4,15 +4,32 @@ import logo from '../../images/logo.png'
 import Nav_menu from './Nav_menu'
 import { MdLightMode, MdDarkMode } from 'react-icons/md'
 import { FiUserPlus, FiUserCheck } from 'react-icons/fi'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 
 const Nav = () => {
    const [theme, setTheme] = useState('light')
    const [displayMenu, setDisplayMenu] = useState(false)
+   const navbar = useRef<HTMLElement>(null)
+
    enum switchTheme {
       light = 'dark',
       dark = 'light'
    }
+
+   useEffect(() => {
+      let y:number = 0
+
+      window.addEventListener('scroll', () => {
+         if(y < window.scrollY) {
+            navbar.current!.style.position = 'relative'
+
+         }else {
+            navbar.current!.style.position = 'fixed'
+         }
+
+         y = window.scrollY
+      })
+   })
 
    const changeMode = () => {
       const t:string = switchTheme[theme as switchTheme]
@@ -39,7 +56,7 @@ const Nav = () => {
    }
 
    return (
-      <nav className='layout-nav'>
+      <nav ref={ navbar } className='layout-nav'>
          <figure>
             <img src={ logo } alt='logo' />
          </figure>
