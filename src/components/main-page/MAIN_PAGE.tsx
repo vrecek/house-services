@@ -17,11 +17,11 @@ const MAIN_PAGE = () => {
 
          <Choose />
 
+         <OfferCont />
+
          <Subscribe />
 
          <ReasonsCont />
-
-         <OfferCont />
       </>
    )
 }

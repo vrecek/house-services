@@ -1,7 +1,7 @@
 @import '../../config';
 
 .offer-nav {
-   background: rgb(92, 122, 209);
+   background: royalblue;
    padding: 0 .5em;
 
    section.wrap { @include flex-sb-c; }
@@ -11,9 +11,9 @@
    section {
       display: flex;
       align-items: center;
+      position: relative;
 
       &.search {
-         position: relative;
          padding: .3em 0;
 
          input {

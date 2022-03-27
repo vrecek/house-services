@@ -99,7 +99,18 @@ body {
       }
 
       .offer-nav {
-         background: rgb(59, 79, 139);
+         background: rgb(37, 65, 148);
+      }
+
+      .offer-cont {
+         article.small,
+         article.big {
+            background: #252525;
+
+            h1 { border-color: $dark-clr1; }
+
+            div.product-details-info { svg { color: #303030; } span { div { background: #151515; } } }
+         }
       }
    }
 }

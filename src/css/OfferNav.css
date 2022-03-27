@@ -2,7 +2,7 @@
 /* -- NAV -- */
 /* -- MAIN HEADER -- */
 .offer-nav {
-  background: #5c7ad1;
+  background: royalblue;
   padding: 0 .5em;
 }
 
@@ -34,10 +34,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .offer-nav section.search {
-  position: relative;
   padding: .3em 0;
 }
 

@@ -142,5 +142,25 @@ body.dark .reasons article div:first-child::before, body.dark .reasons article d
 }
 
 body.dark .offer-nav {
-  background: #3b4f8b;
+  background: #254194;
+}
+
+body.dark .offer-cont article.small,
+body.dark .offer-cont article.big {
+  background: #252525;
+}
+
+body.dark .offer-cont article.small h1,
+body.dark .offer-cont article.big h1 {
+  border-color: whitesmoke;
+}
+
+body.dark .offer-cont article.small div.product-details-info svg,
+body.dark .offer-cont article.big div.product-details-info svg {
+  color: #303030;
+}
+
+body.dark .offer-cont article.small div.product-details-info span div,
+body.dark .offer-cont article.big div.product-details-info span div {
+  background: #151515;
 }

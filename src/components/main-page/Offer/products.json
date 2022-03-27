@@ -1,0 +1,164 @@
+[
+   {
+      "size": "small",
+      "name": "Building name",
+      "stars": 5,
+      "price": 290,
+      "details": {
+         "date": "12-12-2022",
+         "type": "rent",
+         "location": {
+            "city": "Paris",
+            "country": "France"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "big",
+      "name": "Building name",
+      "text": "Lorem ipsum dolor sit amet conqestaur ipsum dolor sit amet conqestaur ",
+      "stars": 4,
+      "price": 30000,
+      "details": {
+         "date": "11-12-2019",
+         "type": "sale",
+         "location": {
+            "city": "Berlin",
+            "country": "Germany"
+         }
+      },
+      "img": ""
+   },
+   {
+      "size": "small",
+      "name": "Building name",
+      "stars": 5,
+      "price": 52000,
+      "details": {
+         "date": "12-08-2021",
+         "type": "sale",
+         "location": {
+            "city": "Madrid",
+            "country": "Spain"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "small",
+      "name": "Building name",
+      "stars": 5,
+      "price": 320,
+      "details": {
+         "date": "12-12-2022",
+         "type": "rent",
+         "location": {
+            "city": "City",
+            "country": "country"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "big",
+      "name": "Building name",
+      "text": "Lorem ipsum dolor sit amet conqestaur ipsum dolor sit amet conqestaur ",
+      "stars": 3,
+      "price": 200,
+      "details": {
+         "date": "05-12-2019",
+         "type": "rent",
+         "location": {
+            "city": "City",
+            "country": "country"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "small",
+      "name": "Building name",
+      "stars": 5,
+      "price": 350,
+      "details": {
+         "date": "12-12-2022",
+         "type": "rent",
+         "location": {
+            "city": "Warsaw",
+            "country": "Polska"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "big",
+      "name": "Building name",
+      "text": "Lorem ipsum dolor sit amet conqestaur ipsum dolor sit amet conqestaur ",
+      "stars": 5,
+      "price": 58000,
+      "details": {
+         "date": "12-11-2020",
+         "type": "sale",
+         "location": {
+            "city": "Rome",
+            "country": "Italy"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "big",
+      "name": "Building name",
+      "text": "Lorem ipsum dolor sit amet conqestaur ipsum dolor sit amet conqestaur ",
+      "stars": 4,
+      "price": 30500,
+      "details": {
+         "date": "07-08-2022",
+         "type": "sale",
+         "location": {
+            "city": "London",
+            "country": "UK"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "small",
+      "name": "Building name",
+      "stars": 4,
+      "price": 150,
+      "details": {
+         "date": "12-11-2017",
+         "type": "rent",
+         "location": {
+            "city": "Katowice",
+            "country": "Polska"
+         }
+      },
+      "img": ""
+   },
+
+   {
+      "size": "small",
+      "name": "Building name",
+      "stars": 3,
+      "price": 22000,
+      "details": {
+         "date": "12-12-2022",
+         "type": "sale",
+         "location": {
+            "city": "Hamburg",
+            "country": "Germany"
+         }
+      },
+      "img": ""
+   }
+]

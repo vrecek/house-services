@@ -1,0 +1,24 @@
+@import '../../config';
+
+article.small {
+   width: 265px;
+   height: 260px;
+
+   figure {
+      height: 40%;
+      overflow: hidden;
+      position: relative;
+
+      img { width: 100%; @include abs-50-50; }
+   }
+
+   section {
+      height: 60%;
+      @include flex-sa-c;
+      flex-direction: column;
+   }
+
+   h4 {
+     width: 23%;
+   }
+}

@@ -6,7 +6,7 @@ const NavSelect = ({ icon, options, action }:offerSelect) => {
       <div className='select-div'>
          { icon }
 
-         <select>
+         <select onChange={ action }>
             {
                options.map(( x:string, i:number ) => (
                   <option key={ i }>{ x }</option>
