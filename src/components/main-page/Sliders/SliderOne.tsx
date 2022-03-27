@@ -48,7 +48,7 @@ const SliderOne = () => {
          ch.style.transition = '.8s'
       }, 50);
    }
-
+  
    useEffect(() => {
       const s = slider.current!
 
