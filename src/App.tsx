@@ -1,20 +1,20 @@
 import React from 'react';
-import Layout from './components/layout/Layout';
-import { Routes, Route } from 'react-router-dom';
 import './css/index.css';
 import MAIN_PAGE from './components/main-page/MAIN_PAGE';
+import Nav from './components/layout/Nav';
+import Footer from './components/layout/Footer';
 
 function App() {
   return (
-    <Layout>
+    <>
 
-      <Routes>
+      <Nav />
 
-        <Route path='/' element={ <MAIN_PAGE /> } />
-        
-      </Routes>
+      <MAIN_PAGE />
 
-    </Layout>
+      <Footer />
+
+    </>
   );
 }
 
