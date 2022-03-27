@@ -82,7 +82,7 @@ body {
       } 
       }
 
-      .subscribe-section, footer { background: rgb(37, 65, 148); }
+      .subscribe-section { background: rgb(37, 65, 148); }
 
       .reasons {
          h1 { background: rgba(0, 0, 0, 0.15); border-bottom: 2px solid whitesmoke; }
@@ -110,6 +110,23 @@ body {
             h1 { border-color: $dark-clr1; }
 
             div.product-details-info { svg { color: #303030; } span { div { background: #151515; } } }
+         }
+      }
+
+      footer {
+         background: #222222;
+         color: rgb(207, 212, 207);
+
+         section.social { background: #151515; border-color:rgb(92, 92, 92); }
+
+         section.lists {  
+            ul {    
+               li {
+                  &.first {
+                     border-color: rgb(207, 212, 207);
+                  }
+               }
+            }
          }
       }
    }

@@ -118,7 +118,7 @@ body.dark .choose-cont article img {
           filter: grayscale(40%);
 }
 
-body.dark .subscribe-section, body.dark footer {
+body.dark .subscribe-section {
   background: #254194;
 }
 
@@ -163,4 +163,18 @@ body.dark .offer-cont article.big div.product-details-info svg {
 body.dark .offer-cont article.small div.product-details-info span div,
 body.dark .offer-cont article.big div.product-details-info span div {
   background: #151515;
+}
+
+body.dark footer {
+  background: #222222;
+  color: #cfd4cf;
+}
+
+body.dark footer section.social {
+  background: #151515;
+  border-color: #5c5c5c;
+}
+
+body.dark footer section.lists ul li.first {
+  border-color: #cfd4cf;
 }
